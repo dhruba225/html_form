@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .all{
+            height: 200px;
+            width: 200px;
+            background-color: antiquewhite;
+        }
+        h1{
+            color: rgb(73, 73, 155);
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>Insert School Details</h1>
+
+
+        <form method="POST">
+            {% csrf_token %}
+
+        <div class="all">
+            <label for="scn">Enter School Name: </label>
+            <input type="text" name="scn" id="scn"><br><br>
+
+            <label for="sch">Enter Head Name:</label>
+            <input type="text" name="sch" id="sch"><br><br>
+
+            <label for="scl">Enter School Location: </label>
+            <input type="text" name="scl" id="scl"><br><br>
+
+            <input type="submit" value="Submit School">
+        </div>
+       
+        </form>
+    </center>
+    
+</body>
+</html>

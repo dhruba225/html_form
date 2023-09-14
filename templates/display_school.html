@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .all{
+            background-color: aqua;
+            height: 400px;
+            width: 400px;
+            padding-top: 30px;
+            
+        }
+    </style>
+</head>
+<body>
+    <center>
+    
+        <h1>Display School</h1>
+    <div class="all">
+        <table border="2px">
+        
+            <tr>
+                <th>School Name</th>
+                <th>School Head</th>
+                <th>School Location</th>
+
+                {% for so in QLSO %}
+                <tr>
+                    <td>{{so.ScName}}</td>
+                    <td>{{so.ScHead}}</td>
+                    <td>{{so.ScLoc}}</td>
+                </tr>
+                {% endfor %}
+            </tr>
+        </table>
+    </div>
+    </center>
+</body>
+</html>
